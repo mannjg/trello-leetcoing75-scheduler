@@ -57,6 +57,8 @@ def load_config():
     """
     Load essential configurations from environment variables.
     """
+    
+    logging.info("Environment: %s", os.environ)
     return {
         "API_KEY": os.environ.get("API_KEY"),
         "OAUTH_TOKEN": os.environ.get("OAUTH_TOKEN"),
